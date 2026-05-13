@@ -1,13 +1,8 @@
-<img width="1913" height="930" alt="image" src="https://github.com/user-attachments/assets/cccf7770-ae1a-46a3-9c87-6221950ce492" />
-<img width="791" height="907" alt="image" src="https://github.com/user-attachments/assets/4cd70a45-f5f4-4e54-bc45-672d11f40931" />
-<img width="909" height="497" alt="image" src="https://github.com/user-attachments/assets/bd31581a-e040-4e1d-ab91-64a3ac53d3b3" />
-
-
 # Scalper V19
 
 An automated MT5 scalping bot covering Forex, Metals, and Crypto — with a live web dashboard, per-symbol parameter overrides, and four trading strategies.
 
----
+<img width="1913" height="930" alt="image" src="https://github.com/user-attachments/assets/cccf7770-ae1a-46a3-9c87-6221950ce492" />
 
 ## Features
 
@@ -33,7 +28,7 @@ An automated MT5 scalping bot covering Forex, Metals, and Crypto — with a live
 | **Sniper Impulse** | Fires on a strong candle (body > 70% of range) in the EMA9 > EMA21 direction. |
 | **Sniper Reversion** | Counter-trend fade when price stretches > 1.5× ATR from EMA9, back toward H1 bias. |
 
----
+<img width="791" height="907" alt="image" src="https://github.com/user-attachments/assets/4cd70a45-f5f4-4e54-bc45-672d11f40931" />
 
 ## Symbols
 
@@ -45,7 +40,7 @@ An automated MT5 scalping bot covering Forex, Metals, and Crypto — with a live
 | Metals | XAUUSD, XAGUSD |
 | Crypto | BTCUSD, ETHUSD, SOLUSD, BNBUSD, XRPUSD, ADAUSD, LTCUSD, DOTUSD, DOGUSD |
 
----
+<img width="909" height="497" alt="image" src="https://github.com/user-attachments/assets/bd31581a-e040-4e1d-ab91-64a3ac53d3b3" />
 
 ## Requirements
 
