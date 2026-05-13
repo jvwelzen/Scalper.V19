@@ -4,6 +4,8 @@ An automated MT5 scalping bot covering Forex, Metals, and Crypto — with a live
 
 <img width="1913" height="930" alt="image" src="https://github.com/user-attachments/assets/cccf7770-ae1a-46a3-9c87-6221950ce492" />
 
+---
+
 ## Features
 
 - **4 trading strategies** running simultaneously per symbol: Normal, Sniper Breakout, Sniper Impulse, and Sniper Reversion
@@ -30,6 +32,8 @@ An automated MT5 scalping bot covering Forex, Metals, and Crypto — with a live
 
 <img width="791" height="907" alt="image" src="https://github.com/user-attachments/assets/4cd70a45-f5f4-4e54-bc45-672d11f40931" />
 
+---
+
 ## Symbols
 
 | Category | Symbols |
@@ -41,6 +45,8 @@ An automated MT5 scalping bot covering Forex, Metals, and Crypto — with a live
 | Crypto | BTCUSD, ETHUSD, SOLUSD, BNBUSD, XRPUSD, ADAUSD, LTCUSD, DOTUSD, DOGUSD |
 
 <img width="909" height="497" alt="image" src="https://github.com/user-attachments/assets/bd31581a-e040-4e1d-ab91-64a3ac53d3b3" />
+
+---
 
 ## Requirements
 
@@ -58,8 +64,8 @@ pip install MetaTrader5 pandas numpy flask
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/jvwelzen/Scalper-V19.git
-   cd Scalper-V19
+   git clone https://github.com/jvwelzen/Scalper.V19.git
+   cd Scalper.V19
    ```
 
 2. Place both files in the same directory:
@@ -68,21 +74,22 @@ pip install MetaTrader5 pandas numpy flask
    scalper_overrides.json
    ```
 
-3. Change your MetaTrader 5 account on line 420 in scalper_v19.py.
-
-if not mt5.initialize(
-    path="C:/Program Files/MetaTrader 5/terminal64.exe",
-    login=YOUR ACCOUNT NUMBER,            # ACCOUNT NUMBER
-    server="VantageInternational-Demo",   # YOUR SERVER
-    password="YOUR PASSWORD"              # YOUR PASSWORD
-):
+3. Edit your MT5 credentials on line 420 of `scalper_v19.py`:
+   ```python
+   if not mt5.initialize(
+       path="C:/Program Files/MetaTrader 5/terminal64.exe",
+       login=YOUR_ACCOUNT_NUMBER,            # your account number
+       server="VantageInternational-Demo",   # your server name
+       password="YOUR_PASSWORD"              # your password
+   ):
+   ```
 
 4. Run the bot:
    ```bash
    python scalper_v19.py
    ```
 
-5. Open the dashboard: http://localhost:5001
+5. Open the dashboard: [http://localhost:5001](http://localhost:5001)
 
 ---
 
