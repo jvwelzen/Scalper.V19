@@ -68,14 +68,21 @@ pip install MetaTrader5 pandas numpy flask
    scalper_overrides.json
    ```
 
-3. Start MetaTrader 5 and log in to your account.
+3. Change your MetaTrader 5 account on line 420 in scalper_v19.py.
+
+if not mt5.initialize(
+    path="C:/Program Files/MetaTrader 5/terminal64.exe",
+    login=YOUR ACCOUNT NUMBER,            # ACCOUNT NUMBER
+    server="VantageInternational-Demo",   # YOUR SERVER
+    password="YOUR PASSWORD"              # YOUR PASSWORD
+):
 
 4. Run the bot:
    ```bash
    python scalper_v19.py
    ```
 
-5. Open the dashboard: [http://localhost:5001](http://localhost:5001)
+5. Open the dashboard: http://localhost:5001
 
 ---
 
