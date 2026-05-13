@@ -1,3 +1,6 @@
+<img width="909" height="497" alt="image" src="https://github.com/user-attachments/assets/bd31581a-e040-4e1d-ab91-64a3ac53d3b3" />
+
+
 # Scalper V19
 
 An automated MT5 scalping bot covering Forex, Metals, and Crypto — with a live web dashboard, per-symbol parameter overrides, and four trading strategies.
