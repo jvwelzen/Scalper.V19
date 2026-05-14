@@ -418,10 +418,10 @@ def _max_pos(symbol: str) -> int:
 #  MT5 INIT
 # ═══════════════════════════════════════════════════════════════
 if not mt5.initialize(
-    path="C:/Program Files/MetaTrader 5/terminal64.exe",
-    login=YOUR ACCOUNT NUMBER,            # ACCOUNT NUMBER
-    server="VantageInternational-Demo",   # YOUR SERVER
-    password="YOUR PASSWORD"              # YOUR PASSWORD
+    path="C:/Program Files/BTCTrader/terminal64.exe",
+    login=24642317,
+    server="VantageInternational-Demo",
+    password="i*$p9YB&"
 ):
     raise RuntimeError(f"MT5 init failed: {mt5.last_error()}")
 
@@ -1060,7 +1060,7 @@ HTML = r"""
   .panel-title { font-family:var(--sans); font-size:10px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:var(--muted); }
   .panel-count { color:var(--cyan); font-family:var(--sans); font-size:14px; font-weight:700; }
   .table-scroll { flex:1; overflow-y:auto; overflow-x:auto; min-height:0; }
-  .table-scroll::-webkit-scrollbar{width:4px;height:4px} .table-scroll::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
+  .table-scroll::-webkit-scrollbar{width:5px;height:5px} .table-scroll::-webkit-scrollbar-track{background:var(--bg3)} .table-scroll::-webkit-scrollbar-thumb{background:rgba(0,229,160,0.35);border-radius:3px} .table-scroll::-webkit-scrollbar-thumb:hover{background:rgba(0,229,160,0.65)}
   table { width:100%; border-collapse:collapse; min-width:760px; }
   thead th { padding:8px 10px; font-size:9px; letter-spacing:1.5px; text-transform:uppercase; color:var(--muted); font-weight:500; border-bottom:1px solid var(--border2); background:var(--bg2); position:sticky; top:0; z-index:5; text-align:left; white-space:nowrap; }
   thead th:not(:first-child){text-align:right} thead th.center{text-align:center}
@@ -1135,7 +1135,7 @@ HTML = r"""
   .log-section{flex:1;overflow:hidden;display:flex;flex-direction:column;min-height:0}
   .log-header{padding:9px 16px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-shrink:0}
   .log-entries{flex:1;overflow-y:auto;min-height:0}
-  .log-entries::-webkit-scrollbar{width:3px} .log-entries::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
+  .log-entries::-webkit-scrollbar{width:4px} .log-entries::-webkit-scrollbar-track{background:var(--bg3)} .log-entries::-webkit-scrollbar-thumb{background:rgba(0,212,255,0.35);border-radius:2px} .log-entries::-webkit-scrollbar-thumb:hover{background:rgba(0,212,255,0.65)}
   .log-entry{display:grid;grid-template-columns:52px 1fr;gap:6px;padding:5px 16px;border-bottom:1px solid rgba(255,255,255,0.025);font-size:10px;animation:slideIn .2s ease}
   @keyframes slideIn{from{opacity:0;transform:translateX(6px)}to{opacity:1}}
   .log-t{color:var(--muted);font-size:9px;padding-top:1px}
@@ -1148,9 +1148,8 @@ HTML = r"""
   .settings-modal{background:var(--bg2);border:1px solid var(--border2);border-radius:4px;width:760px;max-width:calc(100vw - 32px);max-height:calc(100vh - 56px);display:flex;flex-direction:column;box-shadow:0 24px 80px rgba(0,0,0,0.8);overflow:hidden;flex-shrink:0}
   .settings-cols{display:grid;grid-template-columns:1fr 1fr;gap:0;flex:1;overflow:hidden;min-height:0}
   .settings-col{overflow-y:auto;padding:10px 12px}
-  .settings-col::-webkit-scrollbar{width:3px} .settings-col::-webkit-scrollbar-thumb{background:var(--border2)}
-  .sm-table-scroll::-webkit-scrollbar{width:4px} .sm-table-scroll::-webkit-scrollbar-thumb{background:var(--border2)}
-  .sm-table-scroll::-webkit-scrollbar-track{background:transparent}
+  .settings-col::-webkit-scrollbar{width:4px} .settings-col::-webkit-scrollbar-track{background:var(--bg3)} .settings-col::-webkit-scrollbar-thumb{background:rgba(0,229,160,0.30);border-radius:2px} .settings-col::-webkit-scrollbar-thumb:hover{background:rgba(0,229,160,0.60)}
+  .sm-table-scroll::-webkit-scrollbar{width:4px} .sm-table-scroll::-webkit-scrollbar-track{background:var(--bg3)} .sm-table-scroll::-webkit-scrollbar-thumb{background:rgba(255,184,48,0.35);border-radius:2px} .sm-table-scroll::-webkit-scrollbar-thumb:hover{background:rgba(255,184,48,0.65)}
   .settings-col+.settings-col{border-left:1px solid var(--border);background:var(--bg2);display:flex;flex-direction:column;overflow:hidden;padding:0;min-width:0}
   .sm-col-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
   .sm-col-title{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--cyan)}
@@ -1168,7 +1167,7 @@ HTML = r"""
   .settings-head{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;border-bottom:1px solid var(--border);flex-shrink:0}
   .settings-head h2{font-family:var(--sans);font-size:13px;font-weight:700}
   .settings-body{flex:1;overflow-y:auto;padding:12px 14px}
-  .settings-body::-webkit-scrollbar{width:3px} .settings-body::-webkit-scrollbar-thumb{background:var(--border2)}
+  .settings-body::-webkit-scrollbar{width:4px} .settings-body::-webkit-scrollbar-track{background:var(--bg3)} .settings-body::-webkit-scrollbar-thumb{background:rgba(0,229,160,0.30);border-radius:2px} .settings-body::-webkit-scrollbar-thumb:hover{background:rgba(0,229,160,0.60)}
   .settings-section{margin-bottom:14px}
   .settings-section-title{font-size:8px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:7px;padding-bottom:4px;border-bottom:1px solid var(--border)}
   .settings-section-title.crypto-title{color:var(--gold);border-bottom-color:rgba(247,199,90,0.3)}
@@ -1240,19 +1239,57 @@ HTML = r"""
   .tf-btn{height:22px;padding:0 8px;border-radius:3px;font-size:9px;font-weight:600;letter-spacing:1px;cursor:pointer;border:1px solid var(--border2);background:rgba(255,255,255,0.03);color:var(--muted);font-family:var(--mono);transition:all .15s}
   .tf-btn:hover{background:rgba(255,255,255,0.08);color:var(--text)}
   .tf-btn.active{background:rgba(0,229,160,0.12);border-color:rgba(0,229,160,0.35);color:var(--green)}
+  /* Trades popup */
+  .trades-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.78);z-index:900;align-items:flex-start;justify-content:center;backdrop-filter:blur(3px);padding:40px 16px 16px;overflow-y:auto}
+  .trades-overlay.open{display:flex}
+  .trades-modal{background:var(--bg2);border:1px solid var(--border2);border-radius:4px;width:980px;max-width:calc(100vw - 32px);max-height:calc(100vh - 56px);display:flex;flex-direction:column;box-shadow:0 24px 80px rgba(0,0,0,0.85);overflow:hidden;flex-shrink:0;animation:modalIn .18s ease}
+  .trades-modal-head{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid var(--border2);flex-shrink:0}
+  .trades-modal-title{font-family:var(--sans);font-size:15px;font-weight:700;display:flex;align-items:center;gap:12px}
+  .trades-tabs{display:flex;gap:6px}
+  .trades-tab{height:26px;padding:0 14px;border-radius:3px;font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;border:1px solid var(--border2);background:rgba(255,255,255,0.03);color:var(--muted);font-family:var(--mono);transition:all .15s}
+  .trades-tab:hover{background:rgba(255,255,255,0.07);color:var(--text)}
+  .trades-tab.active{background:rgba(0,229,160,0.12);border-color:rgba(0,229,160,0.35);color:var(--green)}
+  .trades-tab.hist-tab.active{background:rgba(0,144,255,0.12);border-color:rgba(0,144,255,0.35);color:var(--accent2)}
+  .trades-body{flex:1;overflow:hidden;display:flex;flex-direction:column;min-height:0}
+  .trades-pane{display:none;flex:1;overflow:auto;min-height:0}
+  .trades-pane.active{display:flex;flex-direction:column}
+  .trades-pane::-webkit-scrollbar,.trades-pane>div::-webkit-scrollbar{width:6px;height:6px}
+  .trades-pane::-webkit-scrollbar-track,.trades-pane>div::-webkit-scrollbar-track{background:var(--bg3)}
+  .trades-pane::-webkit-scrollbar-thumb,.trades-pane>div::-webkit-scrollbar-thumb{background:rgba(0,144,255,0.65);border-radius:3px}
+  .trades-pane::-webkit-scrollbar-thumb:hover,.trades-pane>div::-webkit-scrollbar-thumb:hover{background:rgba(0,144,255,0.90)}
+  .trades-table{width:100%;border-collapse:collapse;min-width:860px}
+  .trades-table thead th{padding:8px 12px;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);font-weight:500;border-bottom:1px solid var(--border2);background:var(--bg3);position:sticky;top:0;z-index:5;text-align:left;white-space:nowrap}
+  .trades-table thead th:not(:first-child){text-align:right}
+  .trades-table tbody tr{border-bottom:1px solid rgba(255,255,255,0.03);transition:background .12s}
+  .trades-table tbody tr:hover{background:rgba(255,255,255,0.025)}
+  .trades-table tbody td{padding:7px 12px;vertical-align:middle;white-space:nowrap;font-size:11px}
+  .trades-table tbody td:not(:first-child){text-align:right}
+  .trades-empty{display:flex;align-items:center;justify-content:center;flex:1;color:var(--muted);font-size:11px;letter-spacing:2px;padding:60px}
+  .trades-summary{display:flex;gap:20px;padding:10px 20px;background:var(--bg3);border-top:1px solid var(--border);font-size:10px;flex-shrink:0}
+  .trades-summary-item{display:flex;flex-direction:column;gap:2px}
+  .trades-summary-label{font-size:8px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted)}
+  .trades-summary-value{font-family:var(--sans);font-size:13px;font-weight:700}
+  .t-buy{color:var(--green)}.t-sell{color:var(--red)}.t-pos{color:var(--green)}.t-neg{color:var(--red)}.t-zero{color:var(--muted)}
+  .trades-refresh{height:22px;padding:0 10px;border-radius:3px;font-size:9px;font-weight:700;letter-spacing:1px;cursor:pointer;border:1px solid rgba(0,229,160,0.3);background:rgba(0,229,160,0.07);color:var(--green);font-family:var(--mono);transition:all .15s}
+  .trades-refresh:hover{background:rgba(0,229,160,0.18)}
+  .hist-filter{display:flex;gap:8px;padding:8px 16px;background:var(--bg3);border-bottom:1px solid var(--border);align-items:center;flex-shrink:0}
+  .hist-filter-btn{height:22px;padding:0 10px;border-radius:3px;font-size:9px;font-weight:700;letter-spacing:1px;cursor:pointer;border:1px solid var(--border2);background:rgba(255,255,255,0.03);color:var(--muted);font-family:var(--mono);transition:all .15s}
+  .hist-filter-btn.active{background:rgba(0,144,255,0.12);border-color:rgba(0,144,255,0.35);color:var(--accent2)}
+  .hist-filter-btn:hover{background:rgba(255,255,255,0.08);color:var(--text)}
 </style>
 </head>
 <body>
 <div class="layout">
 
   <header>
-    <div class="logo"><div class="logo-dot"></div>SCALPER .v19<span class="logo-sub">MERGED <span class="logo-sub2">.build 10</span></span></div>
+    <div class="logo"><div class="logo-dot"></div>SCALPER .v20<span class="logo-sub">MERGED <span class="logo-sub2">.build 11</span></span></div>
     <div class="header-right">
       <span>MAGIC <strong>171717</strong></span>
       <span>STARTED <strong id="h-started">—</strong></span>
       <span>TRADES <strong id="h-trades">0</strong></span>
       <span>START <strong id="g-balance">—</strong></span>
       <div class="live-pill" id="live-pill"><div class="live-dot" id="live-dot"></div><span id="live-label">LIVE</span></div>
+      <button class="settings-btn" onclick="openTrades()" title="Trades" style="font-size:11px;font-weight:700;letter-spacing:1px;font-family:var(--mono);width:auto;padding:0 10px">TRADES</button>
       <button class="settings-btn" onclick="openSettings()" title="Settings">&#9881;</button>
     </div>
   </header>
@@ -1318,6 +1355,77 @@ HTML = r"""
 </div>
 
 <div class="paused-banner" id="paused-banner">⏸ BOT PAUSED — no new trades will be placed</div>
+
+<!-- ═══ TRADES POPUP ═══ -->
+<div class="trades-overlay" id="trades-overlay" onclick="if(event.target===this)closeTrades()">
+  <div class="trades-modal">
+    <div class="trades-modal-head">
+      <div class="trades-modal-title">
+        📊 Trades
+        <div class="trades-tabs">
+          <button class="trades-tab active" id="tab-open" onclick="switchTradesTab('open')">Open Positions</button>
+          <button class="trades-tab hist-tab" id="tab-hist" onclick="switchTradesTab('hist')">Trade History</button>
+        </div>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <button class="trades-refresh" onclick="loadTradesData()">↻ REFRESH</button>
+        <button class="chart-close" onclick="closeTrades()">✕</button>
+      </div>
+    </div>
+
+    <div class="trades-body">
+      <!-- Open Positions Pane -->
+      <div class="trades-pane active" id="pane-open">
+        <div style="display:flex;flex-direction:column;flex:1;overflow:auto;min-height:0">
+          <table class="trades-table" id="open-table">
+            <thead><tr>
+              <th>Ticket</th><th>Symbol</th><th>Dir</th><th>Lot</th>
+              <th>Open Price</th><th>Current Price</th><th>SL</th><th>TP</th>
+              <th>Open Time</th><th>Comment</th><th>P&amp;L</th>
+            </tr></thead>
+            <tbody id="open-tbody"><tr><td colspan="11" class="trades-empty" style="border:none">Loading…</td></tr></tbody>
+          </table>
+        </div>
+        <div class="trades-summary" id="open-summary" style="display:none">
+          <div class="trades-summary-item"><div class="trades-summary-label">Open Positions</div><div class="trades-summary-value" id="sum-open-count">0</div></div>
+          <div class="trades-summary-item"><div class="trades-summary-label">Total Lots</div><div class="trades-summary-value" id="sum-open-lots">0.00</div></div>
+          <div class="trades-summary-item"><div class="trades-summary-label">Floating P&amp;L</div><div class="trades-summary-value" id="sum-open-pnl">$0.00</div></div>
+          <div class="trades-summary-item"><div class="trades-summary-label">Buy / Sell</div><div class="trades-summary-value" id="sum-open-sides">0 / 0</div></div>
+        </div>
+      </div>
+
+      <!-- History Pane -->
+      <div class="trades-pane" id="pane-hist">
+        <div class="hist-filter">
+          <span style="font-size:9px;color:var(--muted);letter-spacing:1px;text-transform:uppercase">Filter:</span>
+          <button class="hist-filter-btn active" onclick="filterHist('all',this)">ALL</button>
+          <button class="hist-filter-btn" onclick="filterHist('win',this)">WIN</button>
+          <button class="hist-filter-btn" onclick="filterHist('loss',this)">LOSS</button>
+          <button class="hist-filter-btn" onclick="filterHist('today',this)">TODAY</button>
+          <span style="margin-left:auto;font-size:9px;color:var(--muted)" id="hist-count-label">— trades</span>
+        </div>
+        <div class="trades-pane active" style="flex:1;overflow:auto;min-height:0;display:block">
+          <table class="trades-table" id="hist-table">
+            <thead><tr>
+              <th>Ticket</th><th>Symbol</th><th>Dir</th><th>Lot</th>
+              <th>Open Price</th><th>Close Price</th><th>Open Time</th><th>Close Time</th>
+              <th>Duration</th><th>Comment</th><th>P&amp;L</th>
+            </tr></thead>
+            <tbody id="hist-tbody"><tr><td colspan="11" class="trades-empty" style="border:none">Loading…</td></tr></tbody>
+          </table>
+        </div>
+        <div class="trades-summary" id="hist-summary" style="display:none">
+          <div class="trades-summary-item"><div class="trades-summary-label">Total Trades</div><div class="trades-summary-value" id="sum-hist-count">0</div></div>
+          <div class="trades-summary-item"><div class="trades-summary-label">Win Rate</div><div class="trades-summary-value" id="sum-hist-wr">0%</div></div>
+          <div class="trades-summary-item"><div class="trades-summary-label">Total P&amp;L</div><div class="trades-summary-value" id="sum-hist-pnl">$0.00</div></div>
+          <div class="trades-summary-item"><div class="trades-summary-label">Wins / Losses</div><div class="trades-summary-value" id="sum-hist-wl">0 / 0</div></div>
+          <div class="trades-summary-item"><div class="trades-summary-label">Avg Win</div><div class="trades-summary-value t-pos" id="sum-hist-avgwin">$0.00</div></div>
+          <div class="trades-summary-item"><div class="trades-summary-label">Avg Loss</div><div class="trades-summary-value t-neg" id="sum-hist-avgloss">$0.00</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- SETTINGS MODAL (with embedded Symbol Manager) -->
 <div class="settings-overlay" id="settings-overlay" onclick="settingsOverlayClick(event)">
@@ -2053,6 +2161,158 @@ HTML = r"""
 
   refresh();
   setInterval(refresh, 2000);
+
+  // ═══════════════════════════════════════════════════════════════
+  //  TRADES POPUP
+  // ═══════════════════════════════════════════════════════════════
+  let _tradesTab = 'open';
+  let _histData = [];
+  let _histFilter = 'all';
+
+  function openTrades() {
+    document.getElementById('trades-overlay').classList.add('open');
+    loadTradesData();
+  }
+  function closeTrades() {
+    document.getElementById('trades-overlay').classList.remove('open');
+  }
+  function switchTradesTab(tab) {
+    _tradesTab = tab;
+    document.getElementById('tab-open').classList.toggle('active', tab === 'open');
+    document.getElementById('tab-hist').classList.toggle('active', tab === 'hist');
+    document.getElementById('pane-open').style.display = tab === 'open' ? 'flex' : 'none';
+    document.getElementById('pane-hist').style.display = tab === 'hist' ? 'flex' : 'none';
+    // Ensure pane-open uses flex-direction:column when visible
+    if (tab === 'open') { document.getElementById('pane-open').style.flexDirection = 'column'; }
+    if (tab === 'hist') { document.getElementById('pane-hist').style.flexDirection = 'column'; }
+  }
+
+  async function loadTradesData() {
+    try {
+      const [openResp, histResp] = await Promise.all([
+        fetch('/api/trades/open').then(r => r.json()),
+        fetch('/api/trades/history').then(r => r.json()),
+      ]);
+      renderOpenTrades(openResp.trades || []);
+      _histData = histResp.trades || [];
+      renderHistoryTrades(_histData, _histFilter);
+    } catch(e) {
+      document.getElementById('open-tbody').innerHTML = '<tr><td colspan="11" style="text-align:center;padding:40px;color:var(--red);letter-spacing:1px">Error loading data</td></tr>';
+    }
+  }
+
+  function fmtTime(ts) {
+    if (!ts) return '—';
+    const d = new Date(ts * 1000);
+    return d.toISOString().slice(0,16).replace('T',' ');
+  }
+  function fmtDuration(secs) {
+    if (secs < 60) return secs + 's';
+    if (secs < 3600) return Math.floor(secs/60) + 'm ' + (secs%60) + 's';
+    const h = Math.floor(secs/3600), m = Math.floor((secs%3600)/60);
+    return h + 'h ' + m + 'm';
+  }
+  function pnlClass(v) { return v > 0 ? 't-pos' : v < 0 ? 't-neg' : 't-zero'; }
+  function pnlFmt(v) { return (v >= 0 ? '+$' : '-$') + Math.abs(v).toFixed(2); }
+
+  function renderOpenTrades(trades) {
+    const tbody = document.getElementById('open-tbody');
+    if (!trades.length) {
+      tbody.innerHTML = '<tr><td colspan="11" style="text-align:center;padding:60px;color:var(--muted);letter-spacing:2px;font-size:11px">NO OPEN POSITIONS</td></tr>';
+      document.getElementById('open-summary').style.display = 'none';
+      return;
+    }
+    let totalPnl = 0, totalLots = 0, buys = 0, sells = 0;
+    tbody.innerHTML = trades.map(t => {
+      const dir = t.type === 0 ? 'BUY' : 'SELL';
+      const dirCls = t.type === 0 ? 't-buy' : 't-sell';
+      const pnl = parseFloat(t.profit);
+      totalPnl += pnl; totalLots += t.volume;
+      if (t.type === 0) buys++; else sells++;
+      const digits = t.price_open < 10 ? 5 : t.price_open < 1000 ? 3 : 1;
+      return `<tr>
+        <td style="color:var(--muted);font-size:10px">#${t.ticket}</td>
+        <td style="font-weight:700">${t.symbol}</td>
+        <td class="${dirCls}" style="font-weight:700;letter-spacing:1px">${dir}</td>
+        <td>${t.volume.toFixed(2)}</td>
+        <td>${t.price_open.toFixed(digits)}</td>
+        <td>${t.price_current.toFixed(digits)}</td>
+        <td style="color:var(--red)">${t.sl ? t.sl.toFixed(digits) : '—'}</td>
+        <td style="color:var(--green)">${t.tp ? t.tp.toFixed(digits) : '—'}</td>
+        <td style="color:var(--muted);font-size:10px">${fmtTime(t.time)}</td>
+        <td style="color:var(--muted);font-size:10px;max-width:140px;overflow:hidden;text-overflow:ellipsis">${t.comment || '—'}</td>
+        <td class="${pnlClass(pnl)}" style="font-weight:700">${pnlFmt(pnl)}</td>
+      </tr>`;
+    }).join('');
+    document.getElementById('open-summary').style.display = 'flex';
+    document.getElementById('sum-open-count').textContent = trades.length;
+    document.getElementById('sum-open-lots').textContent = totalLots.toFixed(2);
+    const pnlEl = document.getElementById('sum-open-pnl');
+    pnlEl.textContent = pnlFmt(totalPnl);
+    pnlEl.className = 'trades-summary-value ' + pnlClass(totalPnl);
+    document.getElementById('sum-open-sides').innerHTML = `<span class="t-buy">${buys}</span> / <span class="t-sell">${sells}</span>`;
+  }
+
+  function filterHist(f, btn) {
+    _histFilter = f;
+    document.querySelectorAll('.hist-filter-btn').forEach(b => b.classList.remove('active'));
+    if (btn) btn.classList.add('active');
+    renderHistoryTrades(_histData, f);
+  }
+
+  function renderHistoryTrades(all, filter) {
+    const today = new Date().toISOString().slice(0,10);
+    let trades = all;
+    if (filter === 'win')   trades = all.filter(t => t.profit > 0);
+    if (filter === 'loss')  trades = all.filter(t => t.profit <= 0);
+    if (filter === 'today') trades = all.filter(t => fmtTime(t.time_close).startsWith(today));
+    document.getElementById('hist-count-label').textContent = trades.length + ' trades';
+    const tbody = document.getElementById('hist-tbody');
+    if (!trades.length) {
+      tbody.innerHTML = '<tr><td colspan="11" style="text-align:center;padding:60px;color:var(--muted);letter-spacing:2px;font-size:11px">NO HISTORY</td></tr>';
+      document.getElementById('hist-summary').style.display = 'none';
+      return;
+    }
+    let totalPnl = 0, wins = 0, losses = 0, winSum = 0, lossSum = 0;
+    tbody.innerHTML = trades.map(t => {
+      const dir = t.type === 0 ? 'BUY' : 'SELL';
+      const dirCls = t.type === 0 ? 't-buy' : 't-sell';
+      const pnl = parseFloat(t.profit);
+      totalPnl += pnl;
+      if (pnl > 0) { wins++; winSum += pnl; } else { losses++; lossSum += pnl; }
+      const duration = t.time_close && t.time ? fmtDuration(t.time_close - t.time) : '—';
+      const digits = t.price_open < 10 ? 5 : t.price_open < 1000 ? 3 : 1;
+      return `<tr>
+        <td style="color:var(--muted);font-size:10px">#${t.ticket}</td>
+        <td style="font-weight:700">${t.symbol}</td>
+        <td class="${dirCls}" style="font-weight:700;letter-spacing:1px">${dir}</td>
+        <td>${t.volume.toFixed(2)}</td>
+        <td>${t.price_open.toFixed(digits)}</td>
+        <td>${t.price_close.toFixed(digits)}</td>
+        <td style="color:var(--muted);font-size:10px">${fmtTime(t.time)}</td>
+        <td style="color:var(--muted);font-size:10px">${fmtTime(t.time_close)}</td>
+        <td style="color:var(--muted);font-size:10px">${duration}</td>
+        <td style="color:var(--muted);font-size:10px;max-width:140px;overflow:hidden;text-overflow:ellipsis">${t.comment || '—'}</td>
+        <td class="${pnlClass(pnl)}" style="font-weight:700">${pnlFmt(pnl)}</td>
+      </tr>`;
+    }).join('');
+    document.getElementById('hist-summary').style.display = 'flex';
+    document.getElementById('sum-hist-count').textContent = trades.length;
+    const wr = trades.length ? Math.round(wins/trades.length*100) : 0;
+    const wrEl = document.getElementById('sum-hist-wr');
+    wrEl.textContent = wr + '%';
+    wrEl.className = 'trades-summary-value ' + (wr >= 50 ? 't-pos' : 't-neg');
+    const pnlEl = document.getElementById('sum-hist-pnl');
+    pnlEl.textContent = pnlFmt(totalPnl);
+    pnlEl.className = 'trades-summary-value ' + pnlClass(totalPnl);
+    document.getElementById('sum-hist-wl').innerHTML = `<span class="t-pos">${wins}</span> / <span class="t-neg">${losses}</span>`;
+    document.getElementById('sum-hist-avgwin').textContent = wins ? '+$' + (winSum/wins).toFixed(2) : '$0.00';
+    document.getElementById('sum-hist-avgloss').textContent = losses ? '-$' + Math.abs(lossSum/losses).toFixed(2) : '$0.00';
+  }
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeTrades();
+  });
 </script>
 </body>
 </html>
@@ -2109,6 +2369,71 @@ def api_toggle_strategy(name):
 def api_log_endpoint():
     with _lock:
         return jsonify(DASHBOARD["log"][:200])
+
+
+@app.route("/api/trades/open")
+def api_trades_open():
+    """Return all currently open positions managed by this bot."""
+    positions = [p for p in (mt5.positions_get() or []) if p.magic == MAGIC]
+    trades = []
+    for p in positions:
+        tick = mt5.symbol_info_tick(p.symbol)
+        current = tick.bid if p.type == mt5.POSITION_TYPE_BUY else tick.ask if tick else p.price_open
+        trades.append({
+            "ticket":        p.ticket,
+            "symbol":        p.symbol,
+            "type":          p.type,   # 0=BUY, 1=SELL
+            "volume":        p.volume,
+            "price_open":    p.price_open,
+            "price_current": round(current, 6),
+            "sl":            p.sl,
+            "tp":            p.tp,
+            "profit":        round(p.profit, 2),
+            "time":          p.time,
+            "comment":       p.comment,
+        })
+    trades.sort(key=lambda x: x["time"], reverse=True)
+    return jsonify({"ok": True, "trades": trades, "count": len(trades)})
+
+
+@app.route("/api/trades/history")
+def api_trades_history():
+    """Return closed trade history for this bot's magic number (last 500)."""
+    from datetime import timedelta
+    date_from = datetime(2000, 1, 1)
+    date_to   = datetime.now() + timedelta(days=1)
+    deals = mt5.history_deals_get(date_from, date_to) or []
+    # Filter: only entry/exit deals with our magic, exclude balance ops
+    magic_deals = [d for d in deals if d.magic == MAGIC and d.entry in (0, 1)]
+    # Group by position_id to pair open/close
+    pos_map: dict = {}
+    for d in magic_deals:
+        pid = d.position_id
+        if pid not in pos_map:
+            pos_map[pid] = []
+        pos_map[pid].append(d)
+    trades = []
+    for pid, ds in pos_map.items():
+        ds_sorted = sorted(ds, key=lambda x: x.time)
+        open_deal  = next((d for d in ds_sorted if d.entry == 0), None)
+        close_deal = next((d for d in reversed(ds_sorted) if d.entry == 1), None)
+        if open_deal is None:
+            continue
+        pnl = sum(d.profit for d in ds_sorted)
+        trades.append({
+            "ticket":      pid,
+            "symbol":      open_deal.symbol,
+            "type":        open_deal.type,  # 0=BUY, 1=SELL — already correct for entry deals
+            "volume":      open_deal.volume,
+            "price_open":  open_deal.price,
+            "price_close": close_deal.price if close_deal else 0.0,
+            "time":        open_deal.time,
+            "time_close":  close_deal.time if close_deal else None,
+            "profit":      round(pnl, 2),
+            "comment":     open_deal.comment,
+        })
+    trades.sort(key=lambda x: x["time"], reverse=True)
+    return jsonify({"ok": True, "trades": trades[:500], "count": len(trades)})
 
 
 @app.route("/api/candles/<symbol>")
