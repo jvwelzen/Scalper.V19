@@ -418,10 +418,10 @@ def _max_pos(symbol: str) -> int:
 #  MT5 INIT
 # ═══════════════════════════════════════════════════════════════
 if not mt5.initialize(
-    path="C:/Program Files/BTCTrader/terminal64.exe",
-    login=24642317,
-    server="VantageInternational-Demo",
-    password="i*$p9YB&"
+    path="C:/Program Files/MetaTrader 5/terminal64.exe",
+    login=YOUR ACCOUNT NUMBER,            # ACCOUNT NUMBER
+    server="VantageInternational-Demo",   # YOUR SERVER
+    password="YOUR PASSWORD"              # YOUR PASSWORD
 ):
     raise RuntimeError(f"MT5 init failed: {mt5.last_error()}")
 
